@@ -2,8 +2,11 @@
 <html>
 
 	<head>
-		<title>lab_2</title>
+		<title>Get/modify</title>
 		<link rel="stylesheet" type="text/css" href="..//css/style.css">
+		<?php 
+			session_start();
+		?>
 	</head>
 
 	<body>
@@ -67,14 +70,14 @@
 			<a href="phpinfo.html">Phpinfo</a>
 		</div>
 
-		<div class="div_input">
-			<h2>Get</h2>
-			<form action="../php/get.php" method="get">
-				<input type="text" name="name" >
-				<input type="text" name="email" >
-				<input type="submit">
-			</form>
-		</div>
+		<p style="color: white">
+			<?php
+				// to change a session variable, just overwrite it 
+				$_SESSION["favcolor"] = "yellow";
+				print_r($_SESSION);
+			?>
+		</p>
+
 	</body>
 
 </html>

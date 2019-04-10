@@ -66,3 +66,24 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.div_input {
+  display: table;
+  margin: 0 auto;
+}
+
+.div_input h2 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+}
+
+.div_input input {
+  display: table;
+  margin: 0 auto;
+  color: white;
+  font-weight: 600;
+  padding: 0px 20px;
+  background-color: rgba(0, 0, 0, 0);
+}

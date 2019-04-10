@@ -2,8 +2,11 @@
 <html>
 
 	<head>
-		<title>Destroy</title>
+		<title>Get/modify</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<?php 
+			session_start();
+		?>
 	</head>
 
 	<body>
@@ -15,9 +18,9 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="get.html">Get</a>
-				    <a href="post.html">Post</a>
-			        <a href="file_upload.html">file upload</a>
+					<a href="../menu/get.html">Get</a>
+				    <a href="../menu/post.html">Post</a>
+			        <a href="../menu/file_upload.html">file upload</a>
 				</div>
 			</div>
 
@@ -26,9 +29,9 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="enabled_disabled.html">enabled/disabled</a>
-				    <a href="create_retrieve.html">create/retrieve</a>
-			        <a href="modify_delete.html">modify/delete</a>
+					<a href="../menu/enabled_disabled.html">enabled/disabled</a>
+				    <a href="../menu/create_retrieve.html">create/retrieve</a>
+			        <a href="../menu/modify_delete.html">modify/delete</a>
 				</div>
 			</div>
 
@@ -37,9 +40,9 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="start.html">start</a>
-				    <a href="get_modify.html">get/modify</a>
-			        <a href="destroy.html">destroy</a>
+					<a href="../menu/start.html">start</a>
+				    <a href="../menu/get_modify.html">get/modify</a>
+			        <a href="../menu/destroy.html">destroy</a>
 				</div>
 			</div>
 
@@ -48,9 +51,9 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="today_is.html">today is</a>
-				    <a href="timezone.html">timezone</a>
-			        <a href="timestamp.html">timestamp</a>
+					<a href="../menu/today_is.html">today is</a>
+				    <a href="../menu/timezone.html">timezone</a>
+			        <a href="../menu/timestamp.html">timestamp</a>
 				</div>
 			</div>
 
@@ -59,20 +62,20 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="reserved.html">(reserved)</a>
+					<a href="../menu/reserved.html">(reserved)</a>
 				</div>
 				
 			</div>
 
-			<a href="phpinfo.html">Phpinfo</a>
+			<a href="../menu/phpinfo.html">Phpinfo</a>
 		</div>
 
-		<div class="div_input">
-			<h2>Destroy</h2>
-			<form action="../php/destroy_session.php">
-				<input type="submit" name="submit" value="Destroy">
-			</form>
-		</div>
+		<p style="color: white">
+			<?php
+				echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+				echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+			?>
+		</p>
 
 	</body>
 
