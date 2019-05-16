@@ -80,6 +80,7 @@
 			<?php
 				echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
 				echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+				print_r($_SESSION);
 			?>
 		</p>
 
